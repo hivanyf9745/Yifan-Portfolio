@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 604 330">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .1;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-8, .cls-9 {
+        fill: url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_16);
+      }
+
+      .cls-10 {
+        mask: url(#mask);
+      }
+
+      .cls-11 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-9 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-3 {
+        opacity: .15;
+      }
+
+      .cls-4 {
+        opacity: .2;
+      }
+
+      .cls-12, .cls-7 {
+        opacity: .35;
+      }
+
+      .cls-13 {
+        mask: url(#mask-1);
+      }
+
+      .cls-5 {
+        opacity: .7;
+      }
+
+      .cls-6 {
+        opacity: .4;
+      }
+    </style>
+    <filter id="luminosity-noclip" x="495.81" y="246.53" width="66.6" height="66.6" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip-2" x="495.81" y="-8732" width="66.6" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x="495.81" y="-8732" width="66.6" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_16" data-name="¡ÂÁ˚ÏˇÌÌ˚È „‡‰ËÂÌÚ 16" x1="554.76" y1="301.06" x2="503.59" y2="258.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".53" stop-color="#fff"/>
+      <stop offset=".53" stop-color="#f7f7f7"/>
+      <stop offset=".53" stop-color="#e2e2e2"/>
+      <stop offset=".54" stop-color="#bfbfbf"/>
+      <stop offset=".54" stop-color="#8f8f8f"/>
+      <stop offset=".55" stop-color="#525252"/>
+      <stop offset=".55" stop-color="#080808"/>
+      <stop offset=".55" stop-color="#000"/>
+      <stop offset=".99" stop-color="#000"/>
+    </linearGradient>
+    <mask id="mask" x="495.81" y="246.53" width="66.6" height="66.6" maskUnits="userSpaceOnUse">
+      <g class="cls-11">
+        <g class="cls-13">
+          <path class="cls-9" d="m529.11,313.14c-18.36,0-33.3-14.94-33.3-33.3s14.94-33.3,33.3-33.3,33.3,14.94,33.3,33.3-14.94,33.3-33.3,33.3Zm0-65.27c-17.63,0-31.97,14.34-31.97,31.97s14.34,31.97,31.97,31.97,31.97-14.34,31.97-31.97-14.34-31.97-31.97-31.97Z"/>
+        </g>
+      </g>
+    </mask>
+  </defs>
+  <g>
+    <rect class="cls-3" x="513.98" y="264.7" width="30.28" height="30.28"/>
+    <rect class="cls-7" x="521.69" y="272.41" width="14.86" height="14.86"/>
+    <g class="cls-12">
+      <path class="cls-2" d="m529.11,321c-22.7,0-41.16-18.46-41.16-41.16s18.46-41.16,41.16-41.16,41.16,18.46,41.16,41.16-18.46,41.16-41.16,41.16Zm0-73.89c-18.04,0-32.72,14.68-32.72,32.72s14.68,32.72,32.72,32.72,32.72-14.68,32.72-32.72-14.68-32.72-32.72-32.72Z"/>
+    </g>
+    <g>
+      <path class="cls-2" d="m489.97,279.65h-4.75c0-7.12,1.74-14.18,5.04-20.44,2.19-4.15,5.02-7.92,8.42-11.18,2.27-2.19,4.78-4.13,7.46-5.78l2.49,4.04c-2.39,1.47-4.63,3.2-6.65,5.16-3.03,2.92-5.56,6.27-7.51,9.98-2.94,5.58-4.49,11.88-4.49,18.23Z"/>
+      <path class="cls-2" d="m506.5,317.26c-5.63-3.39-10.5-8.08-14.11-13.58l3.96-2.6c3.22,4.9,7.57,9.09,12.59,12.12l-2.45,4.06Z"/>
+      <path class="cls-2" d="m549.06,318.75l-2.16-4.23c4.95-2.53,9.4-6.17,12.87-10.54,5.55-6.99,8.48-15.4,8.48-24.34,0-7.77-2.28-15.29-6.57-21.72l3.94-2.63c4.83,7.22,7.38,15.64,7.38,24.36,0,10.03-3.29,19.46-9.51,27.29-3.89,4.89-8.88,8.98-14.43,11.81Z"/>
+      <path class="cls-2" d="m547.95,245.32c-5.73-3.16-12.25-4.82-18.83-4.82v-4.74c7.38,0,14.69,1.87,21.12,5.41l-2.29,4.16Z"/>
+    </g>
+    <g class="cls-10">
+      <path class="cls-8" d="m529.11,313.14c-18.36,0-33.3-14.94-33.3-33.3s14.94-33.3,33.3-33.3,33.3,14.94,33.3,33.3-14.94,33.3-33.3,33.3Zm0-65.27c-17.63,0-31.97,14.34-31.97,31.97s14.34,31.97,31.97,31.97,31.97-14.34,31.97-31.97-14.34-31.97-31.97-31.97Z"/>
+    </g>
+  </g>
+  <g>
+    <rect class="cls-2" x="104" y="18.05" width="263.7" height="9.94"/>
+    <rect class="cls-5" x="72.29" y="18.08" width="26.92" height="9.88"/>
+    <rect class="cls-6" x="46.09" y="18.08" width="21.49" height="9.88"/>
+    <rect class="cls-4" x="25.2" y="18.08" width="16.18" height="9.88"/>
+    <rect class="cls-3" x="9.75" y="18.08" width="10.74" height="9.88"/>
+    <rect class="cls-1" x="-.39" y="18.08" width="5.44" height="9.88"/>
+  </g>
+  <polygon class="cls-2" points="526.84 279.88 373.37 126.4 373.37 11.78 -.39 11.78 -.39 7.52 377.61 7.52 377.61 124.64 529.85 276.88 526.84 279.88"/>
+</svg>
