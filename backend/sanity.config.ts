@@ -5,9 +5,9 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'yifan-portfolio',
+  title: 'backend',
 
-  projectId: 'c6nkffr0',
+  projectId: 'zlzo2zo8',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
