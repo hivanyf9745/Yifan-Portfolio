@@ -1,5 +1,8 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+// import bootstrap
+import "bootstrap/dist/css/bootstrap.css";
+
 // importing font properties
 import localFont from "@next/font/local";
 
