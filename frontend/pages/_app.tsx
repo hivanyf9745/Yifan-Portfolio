@@ -24,17 +24,17 @@ const okuda = localFont({
   ],
 });
 
-const oxanium = localFont({
-  src: [{ path: "../public/fonts/Oxanium-VariableFont_wght.ttf" }],
-});
+// const oxanium = localFont({
+//   src: [{ path: "../public/fonts/Oxanium-VariableFont_wght.ttf" }],
+// });
 
-const avalon = localFont({
-  src: [{ path: "../public/fonts/Avalon.otf" }],
-});
+// const avalon = localFont({
+//   src: [{ path: "../public/fonts/Avalon.otf" }],
+// });
 
-const cygun = localFont({
-  src: [{ path: "../public/fonts/CYGUN-Regular.ttf" }],
-});
+// const cygun = localFont({
+//   src: [{ path: "../public/fonts/CYGUN-Regular.ttf" }],
+// });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }: AppProps) {
             font-weight: 300;
           }
         `}
-      </style>
+      </style> */}
       <Component {...pageProps} />
     </Layout>
   );
