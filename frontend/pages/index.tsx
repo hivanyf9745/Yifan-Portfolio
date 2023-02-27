@@ -1,11 +1,14 @@
 import styles from "../styles/Home.module.css";
 
+import Header from "@/components/header/header";
+import Banner from "@/components/banner/banner";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Okuda</h1>
-      <div className={styles.test}>Oxanium</div>
-    </div>
+    <>
+      <Header />
+      <Banner />
+    </>
   );
 };
 
