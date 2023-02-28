@@ -10,7 +10,7 @@ const Intro = (props: { post: { name: string; body: [] } }) => {
 
   const finalTexts = textArray.map((el: string[]) => el[0]);
 
-  console.log(finalTexts);
+  // console.log(finalTexts);
 
   return (
     <section className={`${styles.introContainer} mx-5`}>
