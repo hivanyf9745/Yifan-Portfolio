@@ -1,0 +1,20 @@
+.imageHolder {
+  position: relative;
+  height: 800px;
+}
+
+.chatbox {
+  position: absolute;
+
+  top: 0;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+}
+
+.introText {
+  position: absolute;
+  width: 925px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

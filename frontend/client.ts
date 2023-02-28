@@ -1,10 +1,9 @@
 // client.ts
-import sanityClient from "@sanity/client";
+import { createClient } from "next-sanity";
 
-export default sanityClient({
+export const client = createClient({
   projectId: "zlzo2zo8", // you can find this in sanity.json
   dataset: "production",
-  apiVersion: "2023-02-14",
-  token: "", // or leave blank for unauthenticated usage
+  apiVersion: "2023-02-28",
   useCdn: true, // `false` if you want to ensure fresh data
 });

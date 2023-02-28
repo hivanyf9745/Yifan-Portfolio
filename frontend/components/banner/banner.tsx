@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className={styles.bannerContainer}>
+    <section className={styles.bannerContainer}>
       <div className={styles.banner}>
         <div className={styles.gear}>
           <Image
@@ -28,7 +28,7 @@ const Banner = () => {
           <span>IVAN HUANG</span>
         </h2>
       </div>
-    </div>
+    </section>
   );
 };
 
