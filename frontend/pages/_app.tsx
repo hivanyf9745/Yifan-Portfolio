@@ -6,14 +6,20 @@ import "bootstrap/dist/css/bootstrap.css";
 // import own css file
 import "../styles/customize.scss";
 
-// importing font properties
+// import local font to the file
 import localFont from "@next/font/local";
 
-// Local Fonts Declarations
+// All the fonts that we need to make this thing work
 const okuda = localFont({
   src: [
-    { path: "../public/fonts/Okuda.otf", weight: "500" },
-    { path: "../public/fonts/Okuda-Bold.otf", weight: "700" },
+    {
+      path: "../public/fonts/Okuda.otf",
+      weight: "500",
+    },
+    {
+      path: "../public/fonts/Okuda-Bold.otf",
+      weight: "700",
+    },
   ],
 });
 
@@ -35,16 +41,18 @@ export default function App({ Component, pageProps }: AppProps) {
       <style jsx global>
         {`
           :root {
-            --okuda-font: ${okuda.style.fontFamily};
             --oxanium-font: ${oxanium.style.fontFamily};
+            --okuda-font: ${okuda.style.fontFamily};
             --avalon-font: ${avalon.style.fontFamily};
             --cygun-font: ${cygun.style.fontFamily};
+            --main-yellow: #fef900;
           }
 
+          // Just to get the default fontFamily set up straight
+
           body {
-            background-color: var(--bs-body-bg);
-            color: #fff;
             font-family: var(--oxanium-font);
+            font-weight: 300;
           }
         `}
       </style>

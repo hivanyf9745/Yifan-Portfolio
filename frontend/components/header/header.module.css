@@ -1,1 +1,26 @@
+.name {
+  font-family: var(--avalon-font);
+  font-size: 32px;
+}
 
+.contactMethod {
+  opacity: 50%;
+}
+
+.contactMethod:hover {
+  opacity: 100%;
+
+  transition: opacity 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.methodLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.methodLink:hover {
+  color: var(--main-yellow);
+
+  transition: all 200ms ease-in-out;
+}

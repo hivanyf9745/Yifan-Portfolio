@@ -1,3 +1,8 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Required
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-$body-bg: var(--bs-blue) !important;
+// Default variable overrides
+$body-bg: #212121;
+$body-color: #fff;
+
+@import "../node_modules/bootstrap/scss/root";
