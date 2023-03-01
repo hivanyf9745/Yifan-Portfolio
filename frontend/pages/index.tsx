@@ -5,6 +5,7 @@ import Banner from "@/components/banner/banner";
 import Intro from "@/components/intro/intro";
 
 import { client } from "../client";
+import groq from "groq";
 
 const Home = (props: { post: { name: string; body: [] } }) => {
   const indexProps = {
@@ -22,11 +23,13 @@ const Home = (props: { post: { name: string; body: [] } }) => {
   );
 };
 
+const query = groq`*[_type == "post"][0]{
+  "name": author -> name,
+  "body": body,
+}`;
+
 export async function getStaticProps() {
-  const post = await client.fetch(`*[_type == "post"][0]{
-    "name": author -> name,
-    "body": body,
-  }`);
+  const post = await client.fetch(query);
 
   return {
     props: {
