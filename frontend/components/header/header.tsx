@@ -47,7 +47,9 @@ const Header = () => {
         </div>
 
         <div className='me-5'>
-          <Link href='/about' className={styles.methodLink}>
+          <Link
+            href='https://www.linkedin.com/in/yifan-ivan-huang-7b8534104/'
+            className={styles.methodLink}>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='22'
@@ -61,7 +63,9 @@ const Header = () => {
         </div>
 
         <div>
-          <Link href='/about' className={styles.methodLink}>
+          <Link
+            href='https://github.com/hivanyf9745'
+            className={styles.methodLink}>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='22'

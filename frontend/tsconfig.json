@@ -25,7 +25,8 @@
     "**/*.tsx",
     "pages/post/[slug].tsx",
     "index.d.ts",
-    "components/banner/banner.tsx"
+    "components/banner/banner.tsx",
+    "components/header/layout.jsx"
   ],
   "exclude": ["node_modules"]
 }
