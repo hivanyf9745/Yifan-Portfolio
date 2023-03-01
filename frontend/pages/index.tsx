@@ -30,7 +30,6 @@ const Home = (props: {
 
   return (
     <>
-      <Header />
       <hr className='mx-5' />
       <Banner />
       <div className='divider' />

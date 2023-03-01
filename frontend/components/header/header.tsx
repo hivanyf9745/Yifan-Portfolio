@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <section className='mt-4 mx-5 d-flex justify-content-between align-items-center '>
+    <header className='mt-4 mx-5 d-flex justify-content-between align-items-center '>
       <Link href='/' className={styles.methodLink}>
         <div className={styles.name}>IVAN HUANG</div>
       </Link>
@@ -74,7 +74,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 

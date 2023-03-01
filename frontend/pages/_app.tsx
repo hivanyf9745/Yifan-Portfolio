@@ -8,6 +8,7 @@ import "../styles/customize.scss";
 
 // import local font to the file
 import localFont from "@next/font/local";
+import Layout from "@/components/header/layout";
 
 // All the fonts that we need to make this thing work
 const okuda = localFont({
@@ -37,7 +38,7 @@ const cygun = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <Layout>
       <style jsx global>
         {`
           :root {
@@ -57,6 +58,6 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </style>
       <Component {...pageProps} />
-    </>
+    </Layout>
   );
 }
