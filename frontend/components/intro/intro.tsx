@@ -23,6 +23,7 @@ const Intro = (props: { post: { name: string; body: [] } }) => {
         />
         <div className={`${styles.introText}`}>
           <h1>Hi, I am {name}!</h1>
+          <br />
           {finalTexts.map((text: string, idx: number) => {
             if (idx <= 1) return <p key={idx}>{text}</p>;
           })}
