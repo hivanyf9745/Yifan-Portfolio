@@ -1,0 +1,31 @@
+.container {
+  height: 800px;
+}
+
+.square {
+  width: 700px;
+  height: 700px;
+
+  background-color: #fff;
+  position: relative;
+}
+
+.triangleLeft {
+  position: absolute;
+  width: 690px;
+  height: 690px;
+  top: 10px;
+  left: 10px;
+
+  background: #212121;
+  clip-path: polygon(0 0, 0 96%, 96% 0);
+}
+
+.triangleRight {
+  position: absolute;
+  width: 690px;
+  height: 690px;
+
+  background-color: #212121;
+  clip-path: polygon(100% 100%, 4% 100%, 100% 4%);
+}

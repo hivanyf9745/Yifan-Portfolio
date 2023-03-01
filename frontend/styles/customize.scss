@@ -4,5 +4,7 @@
 // Default variable overrides
 $body-bg: #212121;
 $body-color: #fff;
+$enable-grid-classes: false;
+$enable-cssgrid: true;
 
 @import "../node_modules/bootstrap/scss/root";
