@@ -7,12 +7,7 @@ const Banner = () => {
     <section className={styles.bannerContainer}>
       <div className={styles.banner}>
         <div className={styles.gear}>
-          <Image
-            src='imgs/gear-component.svg'
-            alt='gear-component'
-            width={52}
-            height={52}
-          />
+          <Image src='imgs/gear-component.svg' alt='gear-component' fill />
         </div>
         <Image
           src='imgs/background-banner.svg'

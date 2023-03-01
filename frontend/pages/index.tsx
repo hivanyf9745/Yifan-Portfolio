@@ -23,10 +23,10 @@ const Home = (props: {
   };
 
   const { categories } = props;
-  console.log("all the categories: -->", categories);
+  // console.log("all the categories: -->", categories);
 
   const { name } = props.post;
-  console.log("author name: -->", name);
+  // console.log("author name: -->", name);
 
   return (
     <>

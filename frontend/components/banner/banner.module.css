@@ -13,6 +13,8 @@
 
 .gear {
   position: absolute;
+  height: 52px;
+  width: 52px;
   top: 15%;
   left: 50%;
 
