@@ -16,4 +16,10 @@ h2 {
   font-family: "CYGUN";
 }
 
+span {
+  font-size: 1.6rem;
+}
+
+$font-size-base: 1.6rem;
+
 @import "../node_modules/bootstrap/scss/root";
