@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./dataAnalysis.module.css";
 
 const DataAnalysis = (props: { categories: string[] }) => {
@@ -14,12 +15,29 @@ const DataAnalysis = (props: { categories: string[] }) => {
           height={700}
         />
       </div>
+
       <div className={`${styles.square}`}>
         {/* These are the sections to divide into triangles */}
-        <div className={styles.triangleLeft}></div>
-        <div className={styles.triangleRight}></div>
+        <div className={styles.triangleLeft} />
+        <div className={styles.triangleRight} />
+
         {/* These are the texts that I want to add */}
+        <Link href='/' className={styles.detailLeft}>
+          <h2>Information Retrieval</h2>
+          <Image src='imgs/loading.svg' alt='loading' width={467} height={83} />
+        </Link>
+        <Link href='/' className={styles.detailRight}>
+          <Image
+            src='imgs/IoT.svg'
+            alt='Internet of Things'
+            width={343}
+            height={91}
+            className={styles.IoT}
+          />
+          <h2>Miami Univ. Crowd Index</h2>
+        </Link>
       </div>
+
       <div>
         <Image
           className={styles.prototypeRight}

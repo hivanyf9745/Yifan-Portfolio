@@ -4,15 +4,15 @@
 
 .libraryCats {
   color: #212121;
-  height: 630px;
+  height: 63rem;
   background-color: var(--main-yellow);
 
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .libraryContainer {
-  width: 150px;
+  width: 15rem;
   height: 100%;
 
   position: absolute;
@@ -22,15 +22,15 @@
 }
 
 .square {
-  width: 150px;
-  height: 150px;
+  width: 15rem;
+  height: 15rem;
 
-  border: rgba(255, 255, 255, 100) solid 1px;
+  border: rgba(255, 255, 255, 100) solid 0.1rem;
 }
 
 .extended {
-  width: 150px;
-  height: 550px;
+  width: 15rem;
+  height: 55rem;
 
-  border: rgba(255, 255, 255, 0.5) solid 1px;
+  border: rgba(255, 255, 255, 0.5) solid 0.1rem;
 }

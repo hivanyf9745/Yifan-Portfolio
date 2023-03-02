@@ -1,8 +1,12 @@
+html {
+  font-size: 62.5%;
+}
+
 .divider {
   width: 100vw;
-  height: 100px;
+  height: 10rem;
 }
 
 .margin-container {
-  margin: 0 150px;
+  margin: 0 15rem;
 }

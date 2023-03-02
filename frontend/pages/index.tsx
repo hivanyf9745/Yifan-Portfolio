@@ -1,6 +1,5 @@
 import styles from "../styles/Home.module.css";
 
-import Header from "@/components/header/header";
 import Banner from "@/components/banner/banner";
 import Intro from "@/components/intro/intro";
 import LibraryRelated from "@/components/library/library";
