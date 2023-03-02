@@ -7,4 +7,13 @@ $body-color: #fff;
 $enable-grid-classes: false;
 $enable-cssgrid: true;
 
+@font-face {
+  font-family: "CYGUN";
+  src: url("../public/fonts/CYGUN-Regular.ttf") format("truetype");
+}
+
+h2 {
+  font-family: "CYGUN";
+}
+
 @import "../node_modules/bootstrap/scss/root";

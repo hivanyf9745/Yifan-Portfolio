@@ -1,0 +1,40 @@
+.leftSide {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+
+  top: 170px;
+  left: 265px;
+}
+
+.title {
+  font-family: var(--okuda-font);
+  font-size: 93px;
+
+  margin-bottom: 50px;
+}
+
+.details {
+  margin-bottom: 50px;
+
+  position: relative;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.details:hover {
+  color: var(--main-yellow);
+
+  transition: all 300ms ease-in-out;
+}
+
+.certificate {
+  position: absolute;
+  top: -20px;
+  left: 140px;
+
+  font-size: 35px;
+}
