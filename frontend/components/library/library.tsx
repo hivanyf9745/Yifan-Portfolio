@@ -35,7 +35,10 @@ const LibraryRelated = (props: { categories: string[] }) => {
       <div
         className={`d-flex flex-column justify-content-between pt-5 ${styles.libraryContainer}`}
       >
-        <div className={styles.extended}></div>
+        <div className={`${styles.extended} d-flex flex-column-reverse align-items-center`}>
+          <p className="text-uppercase" id={styles.marc21}>Marc21 RDA/AACR2 LCSH</p>
+          <p className="text-uppercase" id={styles.lr}>Library Related</p>
+          </div>
         <div className={styles.square}></div>
         <div className={styles.extended}></div>
       </div>
