@@ -6,7 +6,6 @@
   color: #212121;
   height: 63rem;
   background-color: var(--main-yellow);
-
   border-radius: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -33,4 +32,12 @@
   height: 55rem;
 
   border: rgba(255, 255, 255, 0.5) solid 0.1rem;
+}
+
+.yellow_title_numbers{
+  font-size:25rem !important;
+}
+.yellow_title_labels{
+  font-size:7rem;
+  hyphens: manual;
 }

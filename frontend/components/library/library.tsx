@@ -12,19 +12,29 @@ const LibraryRelated = (props: { categories: string[] }) => {
   );
 
   return (
-    <section className={`margin-container ${styles.container}`}>
-      <div className='row justify-content-between gy-5'>
+    <section className={`container ${styles.container}`}>
+      <div className="row justify-content-between gy-5">
         {filteredCategories.map((category: string, idx: number) => {
-          return (
-            <div key={idx} className={`${styles.libraryCats} col-4 mx-5`}>
-              <h2>0{idx + 1}</h2>
-              <h2>{category}</h2>
-            </div>
-          );
+          if (idx % 2 == 0) {
+            return (
+              <div key={idx} className={`${styles.libraryCats} col-12 col-xxl-4 mx-5 ms-xxl-5 ps-5`}>
+                <h2 className={`${styles.yellow_title_numbers}`}>0{idx + 1}</h2>
+                <h2 className={`${styles.yellow_title_labels} text-break`}>{category}</h2>
+              </div>
+            );
+          } else {
+            return (
+              <div key={idx} className={`${styles.libraryCats} col-12 col-xxl-4 mx-5 me-xxl-5 ps-5`}>
+                <h2 className={`${styles.yellow_title_numbers}`}>0{idx + 1}</h2>
+                <h2 className={`${styles.yellow_title_labels} text-break`}>{category}</h2>
+              </div>
+            );
+          }
         })}
       </div>
       <div
-        className={`d-flex flex-column justify-content-between pt-5 ${styles.libraryContainer}`}>
+        className={`d-flex flex-column justify-content-between pt-5 ${styles.libraryContainer}`}
+      >
         <div className={styles.extended}></div>
         <div className={styles.square}></div>
         <div className={styles.extended}></div>
