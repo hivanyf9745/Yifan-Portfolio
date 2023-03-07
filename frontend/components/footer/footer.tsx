@@ -29,16 +29,16 @@ const Footer = () => {
         <ul
           className={`d-flex justify-content-around align-items-center ${styles.toolkit}`}>
           <li>
-            <Link href='https://nextjs.org/'>Next.js</Link>
+            <Link href='https://nextjs.org/' target={"_blank"}>Next.js</Link>
           </li>
           <li>
-            <Link href='https://www.sanity.io/'>Sanity</Link>
+            <Link href='https://www.sanity.io/' target={"_blank"}>Sanity</Link>
           </li>
           <li>
-            <Link href='https://nodejs.org/en/'>Node.js</Link>
+            <Link href='https://nodejs.org/en/' target={"_blank"}>Node.js</Link>
           </li>
           <li>
-            <Link href='https://www.adobe.com/ca/products/illustrator.html?gclid=CjwKCAiA3pugBhAwEiwAWFzwdfuhXK3IDvPS2xmdq-gIMOdfs0V6fw8LnFp-ZZetuuZFfpGPmeDwnRoCD28QAvD_BwE&sdid=KKQML&mv=search&ef_id=CjwKCAiA3pugBhAwEiwAWFzwdfuhXK3IDvPS2xmdq-gIMOdfs0V6fw8LnFp-ZZetuuZFfpGPmeDwnRoCD28QAvD_BwE:G:s&s_kwcid=AL!3085!3!495846071671!e!!g!!adobe%20illustrator!12231505436!122943072691&mv=search'>
+            <Link href='https://www.adobe.com/ca/products/illustrator.html?gclid=CjwKCAiA3pugBhAwEiwAWFzwdfuhXK3IDvPS2xmdq-gIMOdfs0V6fw8LnFp-ZZetuuZFfpGPmeDwnRoCD28QAvD_BwE&sdid=KKQML&mv=search&ef_id=CjwKCAiA3pugBhAwEiwAWFzwdfuhXK3IDvPS2xmdq-gIMOdfs0V6fw8LnFp-ZZetuuZFfpGPmeDwnRoCD28QAvD_BwE:G:s&s_kwcid=AL!3085!3!495846071671!e!!g!!adobe%20illustrator!12231505436!122943072691&mv=search' target={"_blank"}>
               Adobe Illustrator
             </Link>
           </li>
