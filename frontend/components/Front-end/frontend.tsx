@@ -10,7 +10,7 @@ const Frontend = (props: { categories: string[] }) => {
       category === "Certificates" || category === "Showcases"
   );
 
-  console.log(filteredCategories);
+  // console.log(filteredCategories);
 
   return (
     <section className={`d-flex justify-content-between align-items-center`}>
@@ -46,6 +46,7 @@ const Frontend = (props: { categories: string[] }) => {
       <Image
         src='imgs/frontend-skillset.svg'
         alt='frontend-skillset'
+        className={styles.skillset}
         width={584}
         height={567}
       />
