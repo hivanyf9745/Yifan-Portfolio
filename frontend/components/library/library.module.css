@@ -42,7 +42,7 @@
 }
 .yellow_title_labels {
   font-size: 7rem;
-  hyphens: manual;
+  hyphens: auto;
 }
 
 .metadata {

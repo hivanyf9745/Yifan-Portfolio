@@ -32,9 +32,7 @@ const LibraryRelated = (props: { categories: string[] }) => {
                 key={idx}
                 className={`${styles.libraryCats} col-12 col-xxl-4 mx-5 me-xxl-5 ps-5`}>
                 <h2 className={`${styles.yellow_title_numbers}`}>0{idx + 1}</h2>
-                <h2 className={`${styles.yellow_title_labels} text-break`}>
-                  {category}
-                </h2>
+                <h2 className={`${styles.yellow_title_labels}`}>{category}</h2>
               </div>
             );
           }
