@@ -13,7 +13,9 @@ const Frontend = (props: { categories: string[] }) => {
   // console.log(filteredCategories);
 
   return (
-    <section className={`d-flex justify-content-between align-items-center`}>
+    <section
+      className={`d-flex justify-content-between align-items-center`}
+      id='frontend-related'>
       <div className={styles.leftSide}>
         <Image
           src='imgs/Frontend-background.svg'

@@ -12,7 +12,7 @@ const LibraryRelated = (props: { categories: string[] }) => {
   );
 
   return (
-    <section className={`container ${styles.container}`}>
+    <section className={`container ${styles.container}`} id='library-related'>
       <div className='row justify-content-between gy-5'>
         {filteredCategories.map((category: string, idx: number) => {
           if (idx % 2 == 0) {

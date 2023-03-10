@@ -5,7 +5,8 @@ import styles from "./dataAnalysis.module.css";
 const DataAnalysis = (props: { categories: string[] }) => {
   return (
     <section
-      className={`${styles.container} d-flex justify-content-between align-items-center`}>
+      className={`${styles.container} d-flex justify-content-between align-items-center`}
+      id='data-analysis'>
       <div>
         <Image
           className={styles.prototypeLeft}
