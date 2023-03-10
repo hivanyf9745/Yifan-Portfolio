@@ -5,6 +5,7 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Header />
+      <hr className='mx-5' />
       <main>{children}</main>
     </Fragment>
   );
