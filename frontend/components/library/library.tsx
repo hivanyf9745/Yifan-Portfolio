@@ -5,10 +5,10 @@ const LibraryRelated = (props: { categories: string[] }) => {
 
   const filteredCategories = categories.filter(
     (ele: string) =>
-      ele === "Showcases" ||
-      ele === "Degree Information" ||
-      ele === "Classes Taken" ||
-      ele === "Professional Services"
+      ele === "showcases" ||
+      ele === "degree-information" ||
+      ele === "classes-taken" ||
+      ele === "professional-services"
   );
 
   return (
