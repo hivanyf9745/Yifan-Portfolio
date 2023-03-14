@@ -3,6 +3,7 @@ import { client } from "../../../client";
 
 const FrontendDetailPage = props => {
   const { loadedPost } = props;
+  console.log("frontend related loadedPost: --> ", loadedPost);
 
   return (
     <div>

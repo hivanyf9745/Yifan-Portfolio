@@ -3,6 +3,7 @@ import { client } from "../../../client";
 
 const LibraryDetailPage = props => {
   const { loadedPost } = props;
+  console.log("library related loadedPost: --> ", loadedPost);
 
   return (
     <div>
