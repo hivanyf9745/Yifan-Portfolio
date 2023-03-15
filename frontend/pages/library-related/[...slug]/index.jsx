@@ -1,6 +1,8 @@
 import groq from "groq";
 import { client } from "../../../client";
 import { useRouter } from "next/router";
+import { Fragment } from "react";
+import SubNav from "@/components/sub-nav/subNav";
 
 const LibraryDetailPage = props => {
   const router = useRouter();
@@ -11,15 +13,19 @@ const LibraryDetailPage = props => {
 
   if (pathName[0] === "showcases" && pathName.length === 1) {
     return (
-      <ul>
-        {loadedPost.map((loaded, idx) => {
-          return <li key={idx}>{loaded.title}</li>;
-        })}
-      </ul>
+      <Fragment>
+        <SubNav secondary='library-related' tertiary={pathName[0]} />
+        <ul>
+          {loadedPost.map((loaded, idx) => {
+            return <li key={idx}>{loaded.title}</li>;
+          })}
+        </ul>
+      </Fragment>
     );
   } else if (pathName[0] !== "showcases" && pathName.length === 1) {
     return (
       <div>
+        <SubNav secondary='library-related' tertiary={pathName[0]} />
         <h1>
           One of the four portions in library related section:{" "}
           {loadedPost[0].title}
@@ -29,6 +35,7 @@ const LibraryDetailPage = props => {
   } else if (pathName[0] === "showcases" && pathName.length > 1) {
     return (
       <div>
+        <SubNav secondary='library-related' tertiary={pathName[0]} />
         <h1>one of the five showcases: {loadedPost[0].title}</h1>
       </div>
     );

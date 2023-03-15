@@ -1,6 +1,7 @@
 import groq from "groq";
 import { client } from "../../../client";
 import { useRouter } from "next/router";
+import SubNav from "@/components/sub-nav/subNav";
 
 const DataAnalysisDetailPage = props => {
   const { loadedPost } = props;
@@ -11,6 +12,7 @@ const DataAnalysisDetailPage = props => {
 
   return (
     <div>
+      <SubNav secondary='data-analysis' tertiary={pathName[0]} />
       <h1>
         One of the two portions for the data analysis section:{" "}
         {loadedPost[0].title}

@@ -1,0 +1,8 @@
+.subNavBtn {
+  color: #fff;
+}
+
+.subNavBtn:hover {
+  color: var(--main-yellow);
+  transition: all 180ms ease-in-out;
+}

@@ -1,6 +1,8 @@
 import groq from "groq";
 import { client } from "../../../client";
 import { useRouter } from "next/router";
+import SubNav from "@/components/sub-nav/subNav";
+import { Fragment } from "react";
 
 const FrontendDetailPage = props => {
   const { loadedPost } = props;
@@ -11,15 +13,19 @@ const FrontendDetailPage = props => {
 
   if (pathName[0] === "showcases" && pathName.length === 1) {
     return (
-      <ul>
-        {loadedPost.map((load, idx) => {
-          return <li key={idx}>{load.title}</li>;
-        })}
-      </ul>
+      <Fragment>
+        <SubNav secondary='frontend-related' tertiary={pathName[0]} />
+        <ul>
+          {loadedPost.map((load, idx) => {
+            return <li key={idx}>{load.title}</li>;
+          })}
+        </ul>
+      </Fragment>
     );
   } else if (pathName[0] !== "showcases" && pathName.length === 1) {
     return (
       <div>
+        <SubNav secondary='frontend-related' tertiary={pathName[0]} />
         <h1>
           One of the two portions inside frontend related category:{" "}
           {loadedPost[0].title}
@@ -29,6 +35,7 @@ const FrontendDetailPage = props => {
   } else if (pathName[0] === "showcases" && pathName.length > 1) {
     return (
       <div>
+        <SubNav secondary='frontend-related' tertiary={pathName[0]} />
         <h1>
           One of the many frontend-related showcases projects:{" "}
           {loadedPost[0].title}
