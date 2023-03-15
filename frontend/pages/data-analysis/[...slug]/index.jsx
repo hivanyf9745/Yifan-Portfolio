@@ -1,13 +1,20 @@
 import groq from "groq";
 import { client } from "../../../client";
+import { useRouter } from "next/router";
 
 const DataAnalysisDetailPage = props => {
   const { loadedPost } = props;
-  console.log("data analysis loadedPost: --> ", loadedPost);
+
+  const router = useRouter();
+
+  const pathName = router.query.slug;
 
   return (
     <div>
-      <h1>One of the two portions for the data analysis section: </h1>
+      <h1>
+        One of the two portions for the data analysis section:{" "}
+        {loadedPost[0].title}
+      </h1>
     </div>
   );
 };
@@ -38,14 +45,22 @@ export async function getStaticPaths() {
         },
       },
     ],
-    fallback: "blocking",
+    fallback: false,
   };
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
+  const { params } = context;
+
+  const slugPathArr = params.slug;
+
   const data = await client.fetch(allPostsQuery);
 
-  const post = data.filter(datum => datum.categories.includes("data-analysis"));
+  const post = data.filter(
+    datum =>
+      datum.categories.includes("data-analysis") &&
+      datum.slug === slugPathArr[0]
+  );
 
   return {
     props: {

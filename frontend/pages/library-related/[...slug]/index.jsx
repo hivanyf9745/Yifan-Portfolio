@@ -1,18 +1,38 @@
 import groq from "groq";
 import { client } from "../../../client";
+import { useRouter } from "next/router";
 
 const LibraryDetailPage = props => {
-  const { loadedPost } = props;
-  console.log("library related loadedPost: --> ", loadedPost);
+  const router = useRouter();
 
-  return (
-    <div>
-      <h1>
-        One of the four portions inside library related category:{" "}
-        {loadedPost[0].title}
-      </h1>
-    </div>
-  );
+  const pathName = router.query.slug;
+
+  const { loadedPost } = props;
+
+  if (pathName[0] === "showcases" && pathName.length === 1) {
+    return (
+      <ul>
+        {loadedPost.map((loaded, idx) => {
+          return <li key={idx}>{loaded.title}</li>;
+        })}
+      </ul>
+    );
+  } else if (pathName[0] !== "showcases" && pathName.length === 1) {
+    return (
+      <div>
+        <h1>
+          One of the four portions in library related section:{" "}
+          {loadedPost[0].title}
+        </h1>
+      </div>
+    );
+  } else if (pathName[0] === "showcases" && pathName.length > 1) {
+    return (
+      <div>
+        <h1>one of the five showcases: {loadedPost[0].title}</h1>
+      </div>
+    );
+  }
 };
 
 const allPostsQuery = groq`*[_type == "post"]{

@@ -1,18 +1,41 @@
 import groq from "groq";
 import { client } from "../../../client";
+import { useRouter } from "next/router";
 
 const FrontendDetailPage = props => {
   const { loadedPost } = props;
-  console.log("frontend related loadedPost: --> ", loadedPost);
 
-  return (
-    <div>
-      <h1>
-        One of the four portions inside frontend related category:{" "}
-        {loadedPost[0].title}
-      </h1>
-    </div>
-  );
+  const router = useRouter();
+
+  const pathName = router.query.slug;
+
+  if (pathName[0] === "showcases" && pathName.length === 1) {
+    return (
+      <ul>
+        {loadedPost.map((load, idx) => {
+          return <li key={idx}>{load.title}</li>;
+        })}
+      </ul>
+    );
+  } else if (pathName[0] !== "showcases" && pathName.length === 1) {
+    return (
+      <div>
+        <h1>
+          One of the two portions inside frontend related category:{" "}
+          {loadedPost[0].title}
+        </h1>
+      </div>
+    );
+  } else if (pathName[0] === "showcases" && pathName.length > 1) {
+    return (
+      <div>
+        <h1>
+          One of the many frontend-related showcases projects:{" "}
+          {loadedPost[0].title}
+        </h1>
+      </div>
+    );
+  }
 };
 
 const allPostsQuery = groq`*[_type == "post"]{
