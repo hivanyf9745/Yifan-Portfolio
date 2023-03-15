@@ -104,4 +104,5 @@
   margin-bottom: 10px;
   transform: translate(60%, -5rem);
   border-radius: 10px;
+  max-width: 220px;
 }
