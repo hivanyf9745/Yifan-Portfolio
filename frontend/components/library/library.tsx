@@ -17,10 +17,10 @@ const LibraryRelated = (props: { categories: string[] }) => {
         {filteredCategories.map((category: string, idx: number) => {
           if (idx % 2 == 0) {
             return (
-              <div
-                key={idx}
+              <div key={idx}
                 className={`${styles.libraryCats} col-12 col-xxl-4 mx-5 ms-xxl-5 ps-5`}>
                 <h2 className={`${styles.yellow_title_numbers}`}>0{idx + 1}</h2>
+                <div className={`${styles.h2underline}`}></div>
                 <h2 className={`${styles.yellow_title_labels} text-break`}>
                   {category}
                 </h2>
@@ -28,10 +28,10 @@ const LibraryRelated = (props: { categories: string[] }) => {
             );
           } else {
             return (
-              <div
-                key={idx}
+              <div key={idx}
                 className={`${styles.libraryCats} col-12 col-xxl-4 mx-5 me-xxl-5 ps-5`}>
                 <h2 className={`${styles.yellow_title_numbers}`}>0{idx + 1}</h2>
+                <div className={`${styles.h2underline}`}></div>
                 <h2 className={`${styles.yellow_title_labels}`}>{category}</h2>
               </div>
             );

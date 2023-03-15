@@ -97,3 +97,11 @@
   width: 30rem;
   font-family: "Okuda", cursive;
 }
+
+.h2underline{
+  width: 50%;
+  border-bottom: 2rem solid;
+  margin-bottom: 10px;
+  transform: translate(60%, -5rem);
+  border-radius: 10px;
+}
