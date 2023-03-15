@@ -102,7 +102,19 @@
   width: 50%;
   border-bottom: 2rem solid;
   margin-bottom: 10px;
-  transform: translate(60%, -5rem);
+  transform: translate(40%, -5rem);
   border-radius: 10px;
   max-width: 220px;
+}
+
+.folder_line{
+  background-image: url("/imgs/folder-line.svg");
+  background-repeat: no-repeat;
+}
+
+.folder_three_lines{
+  width: 101%;
+  border-bottom: 2rem solid;
+  margin-bottom: 10px;
+  transform: translate(8%, 5rem);
 }
