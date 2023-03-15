@@ -81,3 +81,40 @@
   font-family: var(--okuda-font);
   font-size: 2.7rem;
 }
+.yellow_title_labels{
+  font-size:5.5rem;
+  hyphens: manual;
+}
+
+#marc21{
+  width: 20rem;
+  transform: translate(1rem, -17rem) rotate(90deg);
+}
+
+#lr{
+  font-size:7rem;
+  transform: translate(-4rem, -4.5rem) rotate(90deg);
+  width: 30rem;
+  font-family: "Okuda", cursive;
+}
+
+.h2underline{
+  width: 50%;
+  border-bottom: 2rem solid;
+  margin-bottom: 10px;
+  transform: translate(40%, -5rem);
+  border-radius: 10px;
+  max-width: 220px;
+}
+
+.folder_line{
+  background-image: url("/imgs/folder-line.svg");
+  background-repeat: no-repeat;
+}
+
+.folder_three_lines{
+  width: 101%;
+  border-bottom: 2rem solid;
+  margin-bottom: 10px;
+  transform: translate(8%, 5rem);
+}
