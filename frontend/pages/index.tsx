@@ -5,6 +5,7 @@ import Intro from "@/components/intro/intro";
 import LibraryRelated from "@/components/library/library";
 import Frontend from "@/components/Front-end/frontend";
 import DataAnalysis from "@/components/data-analysis/dataAnalysis";
+import Footer from "@/components/footer/footer";
 
 import { client } from "../client";
 import groq from "groq";
@@ -29,7 +30,6 @@ const Home = (props: {
 
   return (
     <>
-      <hr className='mx-5' />
       <Banner />
       <div className='divider' />
       {name && <Intro {...indexProps} />}
@@ -39,6 +39,8 @@ const Home = (props: {
       {categories && <Frontend {...indexCats} />}
       <div className='divider' />
       {categories && <DataAnalysis {...indexCats} />}
+      <div className='divider' />
+      <Footer />
     </>
   );
 };

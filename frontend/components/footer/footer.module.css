@@ -1,0 +1,40 @@
+.hrTop {
+  margin-bottom: 4.5rem;
+}
+
+.hrBot {
+  margin-top: 4.5rem;
+}
+
+.logoContainer {
+  opacity: 50%;
+  width: 53.6rem;
+  height: 8.5rem;
+}
+
+.footerCredit {
+  position: relative;
+}
+
+.creditText {
+  position: absolute;
+  font-size: 1.8rem;
+  top: -1.2rem;
+  left: 15rem;
+}
+
+.toolkit {
+  list-style: none;
+  width: 37.2rem;
+  height: 2.8rem;
+}
+
+.toolkit > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.toolkit > li > a:hover {
+  color: var(--main-yellow);
+  opacity: 100% !important;
+}

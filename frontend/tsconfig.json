@@ -26,7 +26,10 @@
     "pages/post/[slug].tsx",
     "index.d.ts",
     "components/banner/banner.tsx",
-    "components/header/layout.jsx"
+    "components/header/layout.jsx",
+    "pages/library-related/[...slug]/index.jsx",
+    "pages/frontend-related/[...slug]/index.jsx",
+    "pages/data-analysis/[...slug]/index.jsx"
   ],
   "exclude": ["node_modules"]
 }
