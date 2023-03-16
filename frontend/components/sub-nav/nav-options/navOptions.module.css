@@ -1,0 +1,43 @@
+.portion {
+  width: 20.7rem;
+  height: 9.9rem;
+  border: solid 0.3rem #fff;
+  padding: 2rem;
+  font-size: 3.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portion:first-child {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0 70%);
+}
+
+.portion:last-child {
+  --grad: transparent 49.5%, #fff 50%;
+  clip-path: polygon(0 0, 70% 0, 100% 30%, 100% 100%, 0 100%);
+}
+
+.portion > a > h2 {
+  font-size: 3.2rem;
+}
+
+.portion:hover {
+  background-color: var(--main-yellow);
+  border-color: var(--main-yellow);
+}
+
+.portionActive {
+  background-color: var(--main-yellow);
+  border-color: var(--main-yellow);
+}
+
+.portionActive > a > h2 {
+  color: #212121;
+}
+
+.portionLink {
+  color: #fff;
+  text-decoration: none;
+}

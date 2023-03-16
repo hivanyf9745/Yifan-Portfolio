@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import NavOptions from "./nav-options/navOptions";
 import styles from "./subNav.module.css";
 
 const SubNav = (props: { secondary: string; tertiary: string }) => {
@@ -7,6 +8,11 @@ const SubNav = (props: { secondary: string; tertiary: string }) => {
   }, []);
 
   const { secondary, tertiary } = props;
+
+  const passDownProps = {
+    secondary,
+    tertiary,
+  };
 
   if (secondary === "library-related") {
     return (
@@ -59,7 +65,7 @@ const SubNav = (props: { secondary: string; tertiary: string }) => {
             role='tabpanel'
             aria-labelledby='nav-library-tab'
             tabIndex={0}>
-            This is the library-related navigation detail
+            <NavOptions {...passDownProps} />
           </div>
           <div
             className='tab-pane fade'
@@ -67,7 +73,9 @@ const SubNav = (props: { secondary: string; tertiary: string }) => {
             role='tabpanel'
             aria-labelledby='nav-frontend-tab'
             tabIndex={0}>
-            This is the frontend-related navigation detail
+            <NavOptions
+              {...{ secondary: "frontend-related", tertiary: "undefined" }}
+            />
           </div>
           <div
             className='tab-pane fade'
@@ -75,7 +83,9 @@ const SubNav = (props: { secondary: string; tertiary: string }) => {
             role='tabpanel'
             aria-labelledby='nav-data-analysis-tab'
             tabIndex={0}>
-            This is the data-analysis navigation detail
+            <NavOptions
+              {...{ secondary: "data-analysis", tertiary: "undefined" }}
+            />
           </div>
         </div>
       </section>
@@ -131,7 +141,9 @@ const SubNav = (props: { secondary: string; tertiary: string }) => {
             role='tabpanel'
             aria-labelledby='nav-library-tab'
             tabIndex={0}>
-            This is the library-related navigation detail
+            <NavOptions
+              {...{ secondary: "library-related", tertiary: "undefined" }}
+            />
           </div>
           <div
             className='tab-pane fade show active'
@@ -139,7 +151,7 @@ const SubNav = (props: { secondary: string; tertiary: string }) => {
             role='tabpanel'
             aria-labelledby='nav-frontend-tab'
             tabIndex={0}>
-            This is the frontend-related navigation detail
+            <NavOptions {...passDownProps} />
           </div>
           <div
             className='tab-pane fade'
@@ -147,7 +159,9 @@ const SubNav = (props: { secondary: string; tertiary: string }) => {
             role='tabpanel'
             aria-labelledby='nav-data-analysis-tab'
             tabIndex={0}>
-            This is the data-analysis navigation detail
+            <NavOptions
+              {...{ secondary: "data-analysis", tertiary: "undefined" }}
+            />
           </div>
         </div>
       </section>
@@ -203,7 +217,9 @@ const SubNav = (props: { secondary: string; tertiary: string }) => {
             role='tabpanel'
             aria-labelledby='nav-library-tab'
             tabIndex={0}>
-            This is the library-related navigation detail
+            <NavOptions
+              {...{ secondary: "library-related", tertiary: "undefined" }}
+            />
           </div>
           <div
             className='tab-pane fade'
@@ -211,7 +227,9 @@ const SubNav = (props: { secondary: string; tertiary: string }) => {
             role='tabpanel'
             aria-labelledby='nav-frontend-tab'
             tabIndex={0}>
-            This is the frontend-related navigation detail
+            <NavOptions
+              {...{ secondary: "frontend-related", tertiary: "undefined" }}
+            />
           </div>
           <div
             className='tab-pane fade show active'
@@ -219,7 +237,7 @@ const SubNav = (props: { secondary: string; tertiary: string }) => {
             role='tabpanel'
             aria-labelledby='nav-data-analysis-tab'
             tabIndex={0}>
-            This is the data-analysis navigation detail
+            <NavOptions {...passDownProps} />
           </div>
         </div>
       </section>
