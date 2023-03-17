@@ -3,11 +3,15 @@ import { client } from "../../../client";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
 import SubNav from "@/components/sub-nav/subNav";
+import { getBreadcrumbs } from "@/components/helpers";
+import BreadCrumbs from "@/components/breadcrumbs/breadcrumbs";
 
 const LibraryDetailPage = props => {
   const router = useRouter();
 
   const pathName = router.query.slug;
+
+  const breadcrumbs = getBreadcrumbs(pathName);
 
   const { loadedPost } = props;
 
@@ -15,6 +19,7 @@ const LibraryDetailPage = props => {
     return (
       <Fragment>
         <SubNav secondary='library-related' tertiary={pathName[0]} />
+        <BreadCrumbs breadcrumbs={breadcrumbs} />
         <ul>
           {loadedPost.map((loaded, idx) => {
             return <li key={idx}>{loaded.title}</li>;
@@ -26,6 +31,7 @@ const LibraryDetailPage = props => {
     return (
       <div>
         <SubNav secondary='library-related' tertiary={pathName[0]} />
+        <BreadCrumbs breadcrumbs={breadcrumbs} />
         <h1>
           One of the four portions in library related section:{" "}
           {loadedPost[0].title}
@@ -36,6 +42,7 @@ const LibraryDetailPage = props => {
     return (
       <div>
         <SubNav secondary='library-related' tertiary={pathName[0]} />
+        <BreadCrumbs breadcrumbs={breadcrumbs} />
         <h1>one of the five showcases: {loadedPost[0].title}</h1>
       </div>
     );

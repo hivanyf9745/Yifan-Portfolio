@@ -3,6 +3,8 @@ import { client } from "../../../client";
 import { useRouter } from "next/router";
 import SubNav from "@/components/sub-nav/subNav";
 import { Fragment } from "react";
+import { getBreadcrumbs } from "@/components/helpers";
+import BreadCrumbs from "@/components/breadcrumbs/breadcrumbs";
 
 const FrontendDetailPage = props => {
   const { loadedPost } = props;
@@ -11,10 +13,13 @@ const FrontendDetailPage = props => {
 
   const pathName = router.query.slug;
 
+  const breadcrumbs = getBreadcrumbs(pathName);
+
   if (pathName[0] === "showcases" && pathName.length === 1) {
     return (
       <Fragment>
         <SubNav secondary='frontend-related' tertiary={pathName[0]} />
+        <BreadCrumbs breadcrumbs={breadcrumbs} />
         <ul>
           {loadedPost.map((load, idx) => {
             return <li key={idx}>{load.title}</li>;
@@ -26,6 +31,7 @@ const FrontendDetailPage = props => {
     return (
       <div>
         <SubNav secondary='frontend-related' tertiary={pathName[0]} />
+        <BreadCrumbs breadcrumbs={breadcrumbs} />
         <h1>
           One of the two portions inside frontend related category:{" "}
           {loadedPost[0].title}
@@ -36,6 +42,7 @@ const FrontendDetailPage = props => {
     return (
       <div>
         <SubNav secondary='frontend-related' tertiary={pathName[0]} />
+        <BreadCrumbs breadcrumbs={breadcrumbs} />
         <h1>
           One of the many frontend-related showcases projects:{" "}
           {loadedPost[0].title}
