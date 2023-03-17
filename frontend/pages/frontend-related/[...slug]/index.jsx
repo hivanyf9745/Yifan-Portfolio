@@ -13,7 +13,7 @@ const FrontendDetailPage = props => {
 
   const pathName = router.query.slug;
 
-  const breadcrumbs = getBreadcrumbs(pathName);
+  const breadcrumbs = getBreadcrumbs(pathName, router);
 
   if (pathName[0] === "showcases" && pathName.length === 1) {
     return (

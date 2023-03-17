@@ -1,8 +1,4 @@
-import { useRouter } from "next/router";
-
-export const getBreadcrumbs = (pathName: string[]) => {
-  const router = useRouter();
-
+export const getBreadcrumbs = (pathName, router) => {
   const breadcrumbs = router.pathname
     .split("/")
     .filter(

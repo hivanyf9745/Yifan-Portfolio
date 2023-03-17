@@ -11,7 +11,7 @@ const LibraryDetailPage = props => {
 
   const pathName = router.query.slug;
 
-  const breadcrumbs = getBreadcrumbs(pathName);
+  const breadcrumbs = getBreadcrumbs(pathName, router);
 
   const { loadedPost } = props;
 

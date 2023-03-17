@@ -12,7 +12,7 @@ const DataAnalysisDetailPage = props => {
 
   const pathName = router.query.slug;
 
-  const breadcrumbs = getBreadcrumbs(pathName);
+  const breadcrumbs = getBreadcrumbs(pathName, router);
 
   return (
     <div>
