@@ -40,7 +40,6 @@ const Home = (props: {
       <div className='divider' />
       {categories && <DataAnalysis {...indexCats} />}
       <div className='divider' />
-      <Footer />
     </>
   );
 };

@@ -24,6 +24,10 @@ const okuda = localFont({
   ],
 });
 
+const cygun = localFont({
+  src: [{ path: "../public/fonts/CYGUN-Regular.ttf" }],
+});
+
 const oxanium = localFont({
   src: [{ path: "../public/fonts/Oxanium-VariableFont_wght.ttf" }],
 });
@@ -41,6 +45,7 @@ export default function App({ Component, pageProps }: AppProps) {
             --oxanium-font: ${oxanium.style.fontFamily};
             --okuda-font: ${okuda.style.fontFamily};
             --avalon-font: ${avalon.style.fontFamily};
+            --cygun-font: ${cygun.style.fontFamily};
             --main-yellow: #fef900;
           }
 

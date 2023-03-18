@@ -2,9 +2,11 @@ import groq from "groq";
 import { client } from "../../../client";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
-import SubNav from "@/components/sub-nav/subNav";
 import { getBreadcrumbs } from "@/components/helpers";
+
+import SubNav from "@/components/sub-nav/subNav";
 import BreadCrumbs from "@/components/breadcrumbs/breadcrumbs";
+import TertiaryPage from "@/components/tertiary/tertiary";
 
 const LibraryDetailPage = props => {
   const router = useRouter();
@@ -20,11 +22,11 @@ const LibraryDetailPage = props => {
       <Fragment>
         <SubNav secondary='library-related' tertiary={pathName[0]} />
         <BreadCrumbs breadcrumbs={breadcrumbs} />
-        <ul>
-          {loadedPost.map((loaded, idx) => {
-            return <li key={idx}>{loaded.title}</li>;
-          })}
-        </ul>
+        <TertiaryPage
+          secondary='library-related'
+          tertiary={pathName[0]}
+          loadedPost={loadedPost}
+        />
       </Fragment>
     );
   } else if (pathName[0] !== "showcases" && pathName.length === 1) {

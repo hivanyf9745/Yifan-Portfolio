@@ -5,6 +5,7 @@ import SubNav from "@/components/sub-nav/subNav";
 import { Fragment } from "react";
 import { getBreadcrumbs } from "@/components/helpers";
 import BreadCrumbs from "@/components/breadcrumbs/breadcrumbs";
+import TertiaryPage from "@/components/tertiary/tertiary";
 
 const FrontendDetailPage = props => {
   const { loadedPost } = props;
@@ -20,11 +21,11 @@ const FrontendDetailPage = props => {
       <Fragment>
         <SubNav secondary='frontend-related' tertiary={pathName[0]} />
         <BreadCrumbs breadcrumbs={breadcrumbs} />
-        <ul>
-          {loadedPost.map((load, idx) => {
-            return <li key={idx}>{load.title}</li>;
-          })}
-        </ul>
+        <TertiaryPage
+          secondary='frontend-related'
+          tertiary={pathName[0]}
+          loadedPost={loadedPost}
+        />
       </Fragment>
     );
   } else if (pathName[0] !== "showcases" && pathName.length === 1) {
