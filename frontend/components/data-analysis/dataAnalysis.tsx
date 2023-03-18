@@ -23,11 +23,16 @@ const DataAnalysis = (props: { categories: string[] }) => {
         <div className={styles.triangleRight} />
 
         {/* These are the texts that I want to add */}
-        <Link href='/' className={styles.detailLeft}>
+        <Link
+          href='/data-analysis/information-retrieval-system-using-pyterrier-react-js-and-node'
+          className={styles.detailLeft}>
           <h2>Information Retrieval</h2>
           <Image src='imgs/loading.svg' alt='loading' width={467} height={83} />
         </Link>
-        <Link href='/' className={styles.detailRight}>
+
+        <Link
+          href='/data-analysis/miami-university-crowd-index-using-d3-to-display-real-time-library-crowdedness'
+          className={styles.detailRight}>
           <Image
             src='imgs/IoT.svg'
             alt='Internet of Things'

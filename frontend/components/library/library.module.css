@@ -4,6 +4,7 @@
 
 .libraryCats {
   color: #212121;
+  text-decoration: none;
   height: 63rem;
   background-color: var(--main-yellow);
   border-radius: 1rem;
@@ -40,6 +41,7 @@
 .yellow_title_numbers {
   font-size: 25rem !important;
 }
+
 .yellow_title_labels {
   font-size: 7rem;
   hyphens: auto;
@@ -81,24 +83,24 @@
   font-family: var(--okuda-font);
   font-size: 2.7rem;
 }
-.yellow_title_labels{
-  font-size:5.5rem;
+.yellow_title_labels {
+  font-size: 5.5rem;
   hyphens: manual;
 }
 
-#marc21{
+#marc21 {
   width: 20rem;
   transform: translate(1rem, -17rem) rotate(90deg);
 }
 
-#lr{
-  font-size:7rem;
+#lr {
+  font-size: 7rem;
   transform: translate(-4rem, -4.5rem) rotate(90deg);
   width: 30rem;
   font-family: "Okuda", cursive;
 }
 
-.h2underline{
+.h2underline {
   width: 50%;
   border-bottom: 2rem solid;
   margin-bottom: 10px;
@@ -107,12 +109,12 @@
   max-width: 220px;
 }
 
-.folder_line{
+.folder_line {
   background-image: url("/imgs/folder-line.svg");
   background-repeat: no-repeat;
 }
 
-.folder_three_lines{
+.folder_three_lines {
   width: 101%;
   border-bottom: 2rem solid;
   margin-bottom: 10px;

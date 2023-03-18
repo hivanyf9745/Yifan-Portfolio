@@ -7,7 +7,7 @@ const Frontend = (props: { categories: string[] }) => {
 
   const filteredCategories = categories.filter(
     (category: string) =>
-      category === "Certificates" || category === "Showcases"
+      category === "certificates" || category === "showcases"
   );
 
   // console.log(filteredCategories);
@@ -29,7 +29,7 @@ const Frontend = (props: { categories: string[] }) => {
 
           {filteredCategories.map((item: string, idx: number) => {
             return (
-              <Link href='/' key={idx}>
+              <Link href={`/frontend-related/${item}`} key={idx}>
                 <div className={styles.details}>
                   <h3 className={styles.certificate}>{item}</h3>
                   <Image

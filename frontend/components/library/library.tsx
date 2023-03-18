@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./library.module.css";
 
 const LibraryRelated = (props: { categories: string[] }) => {
@@ -17,40 +18,53 @@ const LibraryRelated = (props: { categories: string[] }) => {
         {filteredCategories.map((category: string, idx: number) => {
           if (idx % 2 == 0) {
             return (
-              <div key={idx}
+              <Link
+                href={`/library-related/${category}`}
+                key={idx}
                 className={`${styles.libraryCats} col-12 col-xxl-4 mx-5 ms-xxl-5 ps-5 d-flex`}>
-                <div className="w-90">
-                  <h2 className={`${styles.yellow_title_numbers}`}>0{idx + 1}</h2>
+                <div className='w-90'>
+                  <h2 className={`${styles.yellow_title_numbers}`}>
+                    0{idx + 1}
+                  </h2>
                   <div className={`${styles.h2underline}`}></div>
-                  <h2 className={`${styles.yellow_title_labels} text-break`}>{category}</h2>
+                  <h2 className={`${styles.yellow_title_labels} text-break`}>
+                    {category}
+                  </h2>
                 </div>
                 <div className={`${styles.folder_line} h-100 w-25`}>
                   <div className={`${styles.folder_three_lines}`}></div>
                   <div className={`${styles.folder_three_lines}`}></div>
                   <div className={`${styles.folder_three_lines}`}></div>
                 </div>
-              </div>
+              </Link>
             );
           } else {
             return (
-              <div key={idx}
+              <Link
+                href={`/library-related/${category}`}
+                key={idx}
                 className={`${styles.libraryCats} col-12 col-xxl-4 mx-5 me-xxl-5 ps-5 d-flex`}>
-                <div className="w-90">
-                  <h2 className={`${styles.yellow_title_numbers}`}>0{idx + 1}</h2>
+                <div className='w-90'>
+                  <h2 className={`${styles.yellow_title_numbers}`}>
+                    0{idx + 1}
+                  </h2>
                   <div className={`${styles.h2underline}`}></div>
-                  <h2 className={`${styles.yellow_title_labels} text-break`}>{category}</h2>
+                  <h2 className={`${styles.yellow_title_labels} text-break`}>
+                    {category}
+                  </h2>
                 </div>
                 <div className={`${styles.folder_line} h-100 w-25`}>
-                <div className={`${styles.folder_three_lines}`}></div>
+                  <div className={`${styles.folder_three_lines}`}></div>
                   <div className={`${styles.folder_three_lines}`}></div>
                   <div className={`${styles.folder_three_lines}`}></div>
                 </div>
-              </div>
+              </Link>
             );
           }
         })}
       </div>
-      <div className={`d-flex flex-column justify-content-between pt-5 ${styles.libraryContainer}`}>
+      <div
+        className={`d-flex flex-column justify-content-between pt-5 ${styles.libraryContainer}`}>
         <div className={styles.extended}>
           <p className={styles.metadata}>MARC 21 RDA/AACR2 LCSH</p>
           <h3 className={styles.libraryRelated}>LIBRARY RELATED</h3>
