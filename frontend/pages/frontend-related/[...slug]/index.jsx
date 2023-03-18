@@ -56,10 +56,12 @@ const FrontendDetailPage = props => {
 const allPostsQuery = groq`*[_type == "post"]{
   "title": title,
   "slug": slug["current"],
-  "body": body[]{"listItem": listItem, "text": children[]["text"], "type": _type, "asset": asset->url},
+  "mainImage": mainImage["asset"] -> url,
+  "body": body[]{"listItem": listItem, "text": children[]{"text": text, "marks": marks},"type": _type, "asset": asset->url},
   "author": author->name,
   "categories": categories[]->title
-}`;
+}
+`;
 
 export async function getStaticPaths() {
   return {

@@ -1,0 +1,22 @@
+.quaternaryContainer {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+  background-color: rgb(60, 60, 60);
+  padding: 0;
+}
+
+.headerImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.postTitle {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
