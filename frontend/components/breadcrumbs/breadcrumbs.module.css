@@ -1,0 +1,37 @@
+.crumbsList {
+  list-style: none;
+}
+
+.listItem {
+  opacity: 50%;
+}
+
+.listItem:last-child {
+  opacity: 100%;
+}
+
+.listItem:last-child > img {
+  display: none;
+}
+
+.listItem:hover {
+  opacity: 100%;
+  transition: all 180ms ease-in-out;
+}
+
+.itemLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+.itemLink:hover {
+  color: var(--main-yellow);
+  transition: all 180ms ease-in-out;
+}
+
+.itemText {
+  font-size: 2rem;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 700;
+}
