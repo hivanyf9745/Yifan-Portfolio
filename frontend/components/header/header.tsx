@@ -12,41 +12,6 @@ const Header = () => {
 
       <div className='d-flex justify-content-center align-items-center fs-6'>
         <div className='me-5'>
-          <Link href='/projects' className={styles.methodLink}>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='22'
-              height='22'
-              fill='currentColor'
-              className='bi bi-kanban me-2'
-              viewBox='0 0 16 16'>
-              <path d='M13.5 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h11zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11z' />
-              <path d='M6.5 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm-4 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm8 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3z' />
-            </svg>
-            <span className={styles.contactMethod}>Projects</span>
-          </Link>
-        </div>
-
-        <div className='me-5'>
-          <Link href='/about' className={styles.methodLink}>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='22'
-              height='22'
-              fill='currentColor'
-              className='bi bi-person-circle me-2'
-              viewBox='0 0 16 16'>
-              <path d='M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z' />
-              <path
-                fillRule='evenodd'
-                d='M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z'
-              />
-            </svg>
-            <span className={styles.contactMethod}>About</span>
-          </Link>
-        </div>
-
-        <div className='me-5'>
           <Link
             href='https://www.linkedin.com/in/yifan-ivan-huang-7b8534104/'
             className={styles.methodLink}>
