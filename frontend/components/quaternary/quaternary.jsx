@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import styles from "./quaternary.module.css";
+import Image from "next/image";
 
 const months = [
   "Jan",
