@@ -47,6 +47,7 @@ export default function App({ Component, pageProps }: AppProps) {
             --avalon-font: ${avalon.style.fontFamily};
             --cygun-font: ${cygun.style.fontFamily};
             --main-yellow: #fef900;
+            --main-purple: #a0a0c0;
           }
 
           // Just to get the default fontFamily set up straight

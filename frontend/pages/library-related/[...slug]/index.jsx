@@ -43,7 +43,7 @@ const LibraryDetailPage = props => {
       <div>
         <SubNav secondary='library-related' tertiary={pathName[0]} />
         <BreadCrumbs breadcrumbs={breadcrumbs} />
-        <h1>one of the five showcases: {loadedPost[0].title}</h1>
+        <QuaternaryPage loadedPost={loadedPost} />
       </div>
     );
   }
@@ -52,6 +52,7 @@ const LibraryDetailPage = props => {
 const allPostsQuery = groq`*[_type == "post"]{
   "title": title,
   "slug": slug["current"],
+  "publishedAt": publishedAt,
   "mainImage": mainImage["asset"] -> url,
   "body": body[]{"listItem": listItem, "text": children[]{"text": text, "marks": marks},"type": _type, "asset": asset->url},
   "author": author->name,

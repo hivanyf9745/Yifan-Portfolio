@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import SubNav from "@/components/sub-nav/subNav";
 import { getBreadcrumbs } from "@/components/helpers";
 import BreadCrumbs from "@/components/breadcrumbs/breadcrumbs";
+import QuaternaryPage from "@/components/quaternary/quaternary";
 
 const DataAnalysisDetailPage = props => {
   const { loadedPost } = props;
@@ -18,10 +19,7 @@ const DataAnalysisDetailPage = props => {
     <div>
       <SubNav secondary='data-analysis' tertiary={pathName[0]} />
       <BreadCrumbs breadcrumbs={breadcrumbs} />
-      <h1>
-        One of the two portions for the data analysis section:{" "}
-        {loadedPost[0].title}
-      </h1>
+      <QuaternaryPage loadedPost={loadedPost} />
     </div>
   );
 };
@@ -29,6 +27,7 @@ const DataAnalysisDetailPage = props => {
 const allPostsQuery = groq`*[_type == "post"]{
   "title": title,
   "slug": slug["current"],
+  "publishedAt": publishedAt,
   "mainImage": mainImage["asset"] -> url,
   "body": body[]{"listItem": listItem, "text": children[]{"text": text, "marks": marks},"type": _type, "asset": asset->url},
   "author": author->name,

@@ -11,14 +11,14 @@ const Footer = () => {
         <div
           className={`d-flex justify-content-between align-items-center ${styles.logoContainer}`}>
           <Image
-            src='../imgs/footer-logo.svg'
+            src='../../imgs/footer-logo.svg'
             alt='footer-logo'
             width={102}
             height={85}
           />
           <div className={styles.footerCredit}>
             <Image
-              src='../imgs/bot-arm.svg'
+              src='../../imgs/bot-arm.svg'
               alt='bot-arm'
               width={380}
               height={65}

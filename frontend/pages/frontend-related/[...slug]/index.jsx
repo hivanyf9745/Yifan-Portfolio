@@ -6,6 +6,7 @@ import { Fragment } from "react";
 import { getBreadcrumbs } from "@/components/helpers";
 import BreadCrumbs from "@/components/breadcrumbs/breadcrumbs";
 import TertiaryPage from "@/components/tertiary/tertiary";
+import QuaternaryPage from "@/components/quaternary/quaternary";
 
 const FrontendDetailPage = props => {
   const { loadedPost } = props;
@@ -33,10 +34,7 @@ const FrontendDetailPage = props => {
       <div>
         <SubNav secondary='frontend-related' tertiary={pathName[0]} />
         <BreadCrumbs breadcrumbs={breadcrumbs} />
-        <h1>
-          One of the two portions inside frontend related category:{" "}
-          {loadedPost[0].title}
-        </h1>
+        <QuaternaryPage loadedPost={loadedPost} />
       </div>
     );
   } else if (pathName[0] === "showcases" && pathName.length > 1) {
@@ -44,10 +42,7 @@ const FrontendDetailPage = props => {
       <div>
         <SubNav secondary='frontend-related' tertiary={pathName[0]} />
         <BreadCrumbs breadcrumbs={breadcrumbs} />
-        <h1>
-          One of the many frontend-related showcases projects:{" "}
-          {loadedPost[0].title}
-        </h1>
+        <QuaternaryPage loadedPost={loadedPost} />
       </div>
     );
   }
@@ -56,6 +51,7 @@ const FrontendDetailPage = props => {
 const allPostsQuery = groq`*[_type == "post"]{
   "title": title,
   "slug": slug["current"],
+  "publishedAt": publishedAt,
   "mainImage": mainImage["asset"] -> url,
   "body": body[]{"listItem": listItem, "text": children[]{"text": text, "marks": marks},"type": _type, "asset": asset->url},
   "author": author->name,
