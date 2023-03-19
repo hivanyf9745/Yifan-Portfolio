@@ -22,6 +22,7 @@ const Frontend = (props: { categories: string[] }) => {
           alt='frontend-background'
           width={820}
           height={740}
+          loading='eager'
         />
 
         <div className={styles.content}>
@@ -37,6 +38,7 @@ const Frontend = (props: { categories: string[] }) => {
                     alt='bot-arm'
                     width={338}
                     height={58}
+                    loading='lazy'
                   />
                 </div>
               </Link>
