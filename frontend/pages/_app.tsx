@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <Head>
-        <title>Ivan Huang's Portfolio</title>
+        <title>Ivan Huang&apos; Portfolio</title>
       </Head>
       <Layout>
         <style jsx global>
