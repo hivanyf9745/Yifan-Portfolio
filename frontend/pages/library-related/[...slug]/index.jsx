@@ -90,6 +90,7 @@ export async function getStaticProps(context) {
       props: {
         loadedPost: post,
       },
+      revalidate: 60,
     };
   } else if (slugPathArr.length > 1) {
     const post = data.filter(
@@ -103,6 +104,7 @@ export async function getStaticProps(context) {
       props: {
         loadedPost: post,
       },
+      revalidate: 60,
     };
   }
 }

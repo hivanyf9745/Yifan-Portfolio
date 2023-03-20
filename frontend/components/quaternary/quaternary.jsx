@@ -77,6 +77,8 @@ const QuaternaryPage = ({ loadedPost }) => {
             } else if (content.text[0].marks[0] === "strong") {
               return (
                 <Fragment key={idx}>
+                  <br />
+                  <br />
                   <h3 className={styles.subTitles}>{content.text[0].text}</h3>
                   <br />
                 </Fragment>
@@ -96,7 +98,11 @@ const QuaternaryPage = ({ loadedPost }) => {
                 </Fragment>
               );
             } else if (content.listItem === "bullet") {
-              return <li key={idx}>{content.text[0].text}</li>;
+              return (
+                <Fragment key={idx}>
+                  <li>{content.text[0].text}</li>
+                </Fragment>
+              );
             } else {
               return (
                 <Fragment key={idx}>
@@ -118,6 +124,10 @@ const QuaternaryPage = ({ loadedPost }) => {
                       backgroundImage: `url(${content.asset})`,
                       backgroundSize: "cover",
                     }}></div>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   <br />
                 </Fragment>
               );
