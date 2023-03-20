@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import styles from "./quaternary.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const months = [
   "Jan",
@@ -77,6 +78,17 @@ const QuaternaryPage = ({ loadedPost }) => {
               return (
                 <Fragment key={idx}>
                   <h3 className={styles.subTitles}>{content.text[0].text}</h3>
+                  <br />
+                </Fragment>
+              );
+            } else if (content.markDefs !== null) {
+              return (
+                <Fragment key={idx}>
+                  <p>
+                    <Link href={content.markDefs} className={styles.webLink}>
+                      {content.text[0].text}
+                    </Link>
+                  </p>
                   <br />
                 </Fragment>
               );

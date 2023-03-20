@@ -57,3 +57,14 @@
   color: #9580ff;
   font-weight: 700;
 }
+
+.webLink {
+  font-size: 1.8rem;
+  color: var(--main-yellow);
+  font-weight: 700;
+}
+
+.webLink:hover {
+  color: #00d2ff;
+  transition: all 180ms ease-in-out;
+}
