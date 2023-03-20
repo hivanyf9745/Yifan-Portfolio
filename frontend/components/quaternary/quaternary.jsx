@@ -85,7 +85,10 @@ const QuaternaryPage = ({ loadedPost }) => {
               return (
                 <Fragment key={idx}>
                   <p>
-                    <Link href={content.markDefs} className={styles.webLink}>
+                    <Link
+                      href={content.markDefs}
+                      className={styles.webLink}
+                      target={"_blank"}>
                       {content.text[0].text}
                     </Link>
                   </p>
