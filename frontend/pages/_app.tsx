@@ -9,6 +9,8 @@ import "../styles/customize.scss";
 // import local font to the file
 import localFont from "@next/font/local";
 import Layout from "@/components/header/layout";
+import Head from "next/head";
+import { Fragment } from "react";
 
 // All the fonts that we need to make this thing work
 const okuda = localFont({
@@ -38,27 +40,32 @@ const avalon = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <style jsx global>
-        {`
-          :root {
-            --oxanium-font: ${oxanium.style.fontFamily};
-            --okuda-font: ${okuda.style.fontFamily};
-            --avalon-font: ${avalon.style.fontFamily};
-            --cygun-font: ${cygun.style.fontFamily};
-            --main-yellow: #fef900;
-            --main-purple: #a0a0c0;
-          }
+    <Fragment>
+      <Head>
+        <title>Ivan Huang's Portfolio</title>
+      </Head>
+      <Layout>
+        <style jsx global>
+          {`
+            :root {
+              --oxanium-font: ${oxanium.style.fontFamily};
+              --okuda-font: ${okuda.style.fontFamily};
+              --avalon-font: ${avalon.style.fontFamily};
+              --cygun-font: ${cygun.style.fontFamily};
+              --main-yellow: #fef900;
+              --main-purple: #a0a0c0;
+            }
 
-          // Just to get the default fontFamily set up straight
+            // Just to get the default fontFamily set up straight
 
-          body {
-            font-family: var(--oxanium-font);
-            font-weight: 300;
-          }
-        `}
-      </style>
-      <Component {...pageProps} />
-    </Layout>
+            body {
+              font-family: var(--oxanium-font);
+              font-weight: 300;
+            }
+          `}
+        </style>
+        <Component {...pageProps} />
+      </Layout>
+    </Fragment>
   );
 }
