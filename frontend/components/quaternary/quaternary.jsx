@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import styles from "./quaternary.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const months = [
   "Jan",
@@ -64,42 +65,73 @@ const QuaternaryPage = ({ loadedPost }) => {
         <hr className='my-5' />
 
         {loadedPost[0].body.map((content, idx) => {
-          if (content.text[0].marks[0] === "em") {
-            return (
-              <Fragment key={idx}>
-                <h3 className={styles.brief}>{content.text[0].text}</h3>
-                <br />
-                <br />
-              </Fragment>
-            );
-          } else if (content.text[0].marks[0] === "strong") {
-            return (
-              <Fragment key={idx}>
-                <h3 className={styles.subTitles}>{content.text[0].text}</h3>
-                <br />
-              </Fragment>
-            );
-          } else if (content.listItem === "bullet") {
-            return <li key={idx}>{content.text[0].text}</li>;
-          } else if (content.type === "Image") {
-            return (
-              <Fragment key={idx}>
-                <div className={`${styles.imageContainer}`}>
-                  <Image src={content.asset} alt='image' fill />
-                </div>
-                <br />
-              </Fragment>
-            );
-          } else {
-            return (
-              <Fragment key={idx}>
-                <br />
-                <p key={idx} className={styles.bodyText}>
-                  {content.text[0].text}
-                </p>
-                <br />
-              </Fragment>
-            );
+          if (content.text !== null) {
+            if (content.text[0].marks[0] === "em") {
+              return (
+                <Fragment key={idx}>
+                  <h3 className={styles.brief}>{content.text[0].text}</h3>
+                  <br />
+                  <br />
+                </Fragment>
+              );
+            } else if (content.text[0].marks[0] === "strong") {
+              return (
+                <Fragment key={idx}>
+                  <br />
+                  <br />
+                  <h3 className={styles.subTitles}>{content.text[0].text}</h3>
+                  <br />
+                </Fragment>
+              );
+            } else if (content.markDefs !== null) {
+              return (
+                <Fragment key={idx}>
+                  <p>
+                    <Link
+                      href={content.markDefs}
+                      className={styles.webLink}
+                      target={"_blank"}>
+                      {content.text[0].text}
+                    </Link>
+                  </p>
+                  <br />
+                </Fragment>
+              );
+            } else if (content.listItem === "bullet") {
+              return (
+                <Fragment key={idx}>
+                  <li>{content.text[0].text}</li>
+                </Fragment>
+              );
+            } else {
+              return (
+                <Fragment key={idx}>
+                  <br />
+                  <p key={idx} className={styles.bodyText}>
+                    {content.text[0].text}
+                  </p>
+                  <br />
+                </Fragment>
+              );
+            }
+          } else if (content.text === null) {
+            if (content.type === "image") {
+              return (
+                <Fragment key={idx}>
+                  <div
+                    className={`${styles.imageContainer}`}
+                    style={{
+                      backgroundImage: `url(${content.asset})`,
+                      backgroundSize: "cover",
+                    }}></div>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </Fragment>
+              );
+            }
           }
         })}
       </div>

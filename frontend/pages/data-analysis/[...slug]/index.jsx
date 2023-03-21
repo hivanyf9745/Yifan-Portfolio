@@ -29,9 +29,9 @@ const allPostsQuery = groq`*[_type == "post"]{
   "slug": slug["current"],
   "publishedAt": publishedAt,
   "mainImage": mainImage["asset"] -> url,
-  "body": body[]{"listItem": listItem, "text": children[]{"text": text, "marks": marks},"type": _type, "asset": asset->url},
+  "body": body[]{"listItem": listItem, "text": children[]{"text": text, "marks": marks},"type": _type, "asset": asset->url, "markDefs": markDefs[0]["href"]},
   "author": author->name,
-  "categories": categories[]->title
+  "categories": categories[]->title,
 }
 `;
 
@@ -74,6 +74,7 @@ export async function getStaticProps(context) {
     props: {
       loadedPost: post,
     },
+    revalidate: 60,
   };
 }
 

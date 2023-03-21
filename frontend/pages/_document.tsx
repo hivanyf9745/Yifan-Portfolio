@@ -4,15 +4,24 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head>
-        {/* If you want to add bootstrap javascript using bootstrap cdn */}
-        {/* <script
-          src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js'
-          integrity='sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3'
-          crossOrigin='anonymous'></script>
-        <script
-          src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js'
-          integrity='sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD'
-          crossOrigin='anonymous'></script> */}
+        <link
+          rel='apple-touch-icon'
+          sizes='180x180'
+          href='/favicon/apple-touch-icon.png'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='/favicon/favicon-32x32.png'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='16x16'
+          href='/favicon/favicon-16x16.png'
+        />
+        <link rel='manifest' href='/favicon/site.webmanifest'></link>
       </Head>
       <body>
         <Main />
