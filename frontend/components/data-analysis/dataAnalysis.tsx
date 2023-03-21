@@ -5,9 +5,9 @@ import styles from "./dataAnalysis.module.css";
 const DataAnalysis = (props: { categories: string[] }) => {
   return (
     <section
-      className={`${styles.container} d-flex justify-content-between align-items-center`}
+      className={`${styles.container} d-flex justify-content-center justify-content-lg-between align-items-center`}
       id='data-analysis'>
-      <div>
+      <div className="d-none d-lg-block">
         <Image
           className={styles.prototypeLeft}
           src='imgs/prototype-border-left.svg'
@@ -44,7 +44,7 @@ const DataAnalysis = (props: { categories: string[] }) => {
         </Link>
       </div>
 
-      <div>
+      <div className="d-none d-lg-block">
         <Image
           className={styles.prototypeRight}
           src='imgs/prototype-border-right.svg'

@@ -4,10 +4,10 @@ import styles from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <section className={`container ${styles.footer}`}>
+    <section className={`container-fluid ${styles.footer}`}>
       <hr className={styles.hrTop} />
       <div
-        className={`d-flex justify-content-between align-items-center ${styles.footerContainer}`}>
+        className={`d-flex justify-content-around align-items-center ${styles.footerContainer}`}>
         <div
           className={`d-flex justify-content-between align-items-center ${styles.logoContainer}`}>
           <Image
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
         <ul
-          className={`d-flex justify-content-around align-items-center ${styles.toolkit}`}>
+          className={`d-flex flex-lg-row flex-column justify-content-around align-items-start ${styles.toolkit}`}>
           <li>
             <Link href='https://nextjs.org/' target={"_blank"}>
               Next.js

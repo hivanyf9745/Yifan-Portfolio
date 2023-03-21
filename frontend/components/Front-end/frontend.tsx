@@ -14,7 +14,7 @@ const Frontend = (props: { categories: string[] }) => {
 
   return (
     <section
-      className={`d-flex justify-content-between align-items-center`}
+      className={`d-flex justify-content-between align-items-center flex-column flex-lg-row`}
       id='frontend-related'>
       <div className={styles.leftSide}>
         <Image

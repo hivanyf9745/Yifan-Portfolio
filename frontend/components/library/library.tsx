@@ -21,7 +21,7 @@ const LibraryRelated = (props: { categories: string[] }) => {
               <Link
                 href={`/library-related/${category}`}
                 key={idx}
-                className={`${styles.libraryCats} col-12 col-xxl-4 mx-5 ms-xxl-5 ps-5 d-flex`}>
+                className={`${styles.libraryCats} col-12 col-xxl-4 col-lg-5 mx-5 ms-xxl-5 ps-5 d-flex`}>
                 <div className='w-90'>
                   <h2 className={`${styles.yellow_title_numbers}`}>
                     0{idx + 1}
@@ -43,7 +43,7 @@ const LibraryRelated = (props: { categories: string[] }) => {
               <Link
                 href={`/library-related/${category}`}
                 key={idx}
-                className={`${styles.libraryCats} col-12 col-xxl-4 mx-5 me-xxl-5 ps-5 d-flex`}>
+                className={`${styles.libraryCats} col-12 col-xxl-4 col-lg-5 mx-5 me-xxl-5 ps-5 d-flex`}>
                 <div className='w-90'>
                   <h2 className={`${styles.yellow_title_numbers}`}>
                     0{idx + 1}
@@ -64,7 +64,7 @@ const LibraryRelated = (props: { categories: string[] }) => {
         })}
       </div>
       <div
-        className={`d-flex flex-column justify-content-between pt-5 ${styles.libraryContainer}`}>
+        className={`d-none d-xl-flex flex-column justify-content-between pt-5 ${styles.libraryContainer}`}>
         <div className={styles.extended}>
           <p className={styles.metadata}>MARC 21 RDA/AACR2 LCSH</p>
           <h3 className={styles.libraryRelated}>LIBRARY RELATED</h3>

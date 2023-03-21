@@ -19,9 +19,7 @@ const Banner = () => {
       <div className={styles.heroContainer}>
         <h2
           className={`${styles.hero} ${styles.layers} ${styles.glitch}`}
-          data-text='IVANHUANG'>
-          <span>IVAN HUANG</span>
-        </h2>
+          data-text='IVANHUANG'>IVAN HUANG</h2>
       </div>
     </section>
   );

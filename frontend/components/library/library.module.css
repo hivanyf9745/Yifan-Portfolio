@@ -88,18 +88,6 @@
   hyphens: manual;
 }
 
-#marc21 {
-  width: 20rem;
-  transform: translate(1rem, -17rem) rotate(90deg);
-}
-
-#lr {
-  font-size: 7rem;
-  transform: translate(-4rem, -4.5rem) rotate(90deg);
-  width: 30rem;
-  font-family: "Okuda", cursive;
-}
-
 .h2underline {
   width: 50%;
   border-bottom: 2rem solid;

@@ -1,5 +1,6 @@
 // Required
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/rfs/scss";
 
 // Default variable overrides
 $body-bg: #212121;
@@ -29,6 +30,10 @@ $font-size-base: 1.6rem;
 
 .w-90{
   width: 90%;
+}
+
+.intro-content {
+  @include font-size(1.5rem);
 }
 
 @import "../node_modules/bootstrap/scss/root";
