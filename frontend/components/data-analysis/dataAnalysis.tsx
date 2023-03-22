@@ -25,7 +25,7 @@ const DataAnalysis = (props: { categories: string[] }) => {
           <img
             src='imgs/loading.svg'
             alt='loading'
-            width='70%'
+            width='80%'
             className='img-fluid'
           />
         </Link>
@@ -36,7 +36,7 @@ const DataAnalysis = (props: { categories: string[] }) => {
           <img
             src='imgs/IoT.svg'
             alt='Internet of Things'
-            width='70%'
+            width='80%'
             className='float-end'
           />
           <h2 className='float-end'>Miami Univ. Crowd Index</h2>
