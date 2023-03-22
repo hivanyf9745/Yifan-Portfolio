@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
             @media only screen and (max-width: 414px) {
               html {
-                font-size: 35%;
+                font-size: 30%;
               }
             }
 
