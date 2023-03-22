@@ -17,7 +17,7 @@ const DataAnalysis = (props: { categories: string[] }) => {
         />
       </div>
 
-      <div className={`${styles.square}`}>
+      <div className={`${styles.square} container`}>
         <Link
           href='/data-analysis/information-retrieval-system-using-pyterrier-react-js-and-node'
           className={styles.detailLeft}>
