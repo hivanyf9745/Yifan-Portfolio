@@ -18,11 +18,6 @@ const DataAnalysis = (props: { categories: string[] }) => {
       </div>
 
       <div className={`${styles.square}`}>
-        {/* These are the sections to divide into triangles */}
-        <div className={styles.triangleLeft} />
-        <div className={styles.triangleRight} />
-
-        {/* These are the texts that I want to add */}
         <Link
           href='/data-analysis/information-retrieval-system-using-pyterrier-react-js-and-node'
           className={styles.detailLeft}>
