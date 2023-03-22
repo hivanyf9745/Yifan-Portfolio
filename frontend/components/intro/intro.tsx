@@ -12,7 +12,7 @@ const Intro = (props: { post: { name: string; body: [] } }) => {
   // console.log(finalTexts);
 
   return (
-    <section className={`${styles.introContainer} container`}>
+    <section className={`${styles.introContainer}`}>
       <div className={styles.imageHolder}>
         <img
           className='img-fluid'

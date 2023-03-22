@@ -21,11 +21,11 @@ const DataAnalysis = (props: { categories: string[] }) => {
         <Link
           href='/data-analysis/information-retrieval-system-using-pyterrier-react-js-and-node'
           className={styles.detailLeft}>
-          <h2>Information Retrieval</h2>
+          <h2 className='float-start'>Information Retrieval</h2>
           <img
             src='imgs/loading.svg'
             alt='loading'
-            width='80%'
+            width='70%'
             className='img-fluid'
           />
         </Link>
