@@ -18,11 +18,11 @@ const Banner = () => {
         className={`img-fluid ${styles.gear}`}
       />
       <div className={`${styles.heroContainer}`}>
-        <h2
+        {/* <h2
           className={`${styles.hero} ${styles.layers} ${styles.glitch}`}
           data-text='IVANHUANG'>
           IVAN HUANG
-        </h2>
+        </h2> */}
       </div>
     </section>
   );
