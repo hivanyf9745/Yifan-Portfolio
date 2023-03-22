@@ -51,7 +51,7 @@
 
 @media only screen and (max-width: 414px) {
   .hero {
-    font-size: clamp(4rem, 10vw, 7rem);
+    font-size: clamp(4rem, 10vw, 6rem);
   }
 }
 
