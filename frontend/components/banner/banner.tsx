@@ -17,7 +17,7 @@ const Banner = () => {
         alt='gear-component'
         className={`img-fluid ${styles.gear}`}
       />
-      <div className={styles.heroContainer}>
+      <div className={`${styles.heroContainer}`}>
         <h2
           className={`${styles.hero} ${styles.layers} ${styles.glitch}`}
           data-text='IVANHUANG'>

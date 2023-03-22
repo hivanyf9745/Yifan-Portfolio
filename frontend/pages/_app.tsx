@@ -43,6 +43,9 @@ export default function App({ Component, pageProps }: AppProps) {
     <Fragment>
       <Head>
         <title>Ivan Huang&apos;s Portfolio</title>
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1.0'></meta>
       </Head>
       <Layout>
         <style jsx global>
