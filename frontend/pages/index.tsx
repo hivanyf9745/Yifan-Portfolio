@@ -35,7 +35,7 @@ const Home = (props: {
       <div className='divider' />
       {/* {categories && <Frontend {...indexCats} />} */}
       <div className='divider' />
-      {/* {categories && <DataAnalysis {...indexCats} />} */}
+      {categories && <DataAnalysis {...indexCats} />}
       <div className='divider' />
     </>
   );

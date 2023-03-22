@@ -1,6 +1,4 @@
 import styles from "./banner.module.css";
-import Image from "next/image";
-// import { useEffect, useState } from "react";
 
 const Banner = () => {
   return (
