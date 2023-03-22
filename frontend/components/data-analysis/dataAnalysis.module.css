@@ -11,6 +11,12 @@
   position: relative;
 }
 
+@media only screen and (max-width: 414px) {
+  .square {
+    height: 65rem;
+  }
+}
+
 .detailLeft {
   top: 2rem;
   left: 2rem;
