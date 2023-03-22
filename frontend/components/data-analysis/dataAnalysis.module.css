@@ -32,16 +32,6 @@
   font-size: 6.5rem;
 }
 
-@media only screen and (max-width: 414px) {
-  .detailLeft > h2 {
-    font-size: 5rem;
-  }
-
-  .detailRight > h2 {
-    font-size: 5rem;
-  }
-}
-
 .detailRight {
   right: 2rem;
   bottom: 2rem;
@@ -62,4 +52,14 @@
 .detailRight > h2 {
   font-size: 7rem;
   text-align: right;
+}
+
+@media only screen and (max-width: 414px) {
+  .detailLeft > h2 {
+    font-size: 5rem;
+  }
+
+  .detailRight > h2 {
+    font-size: 5rem;
+  }
 }
