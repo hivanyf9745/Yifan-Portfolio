@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./frontend.module.css";
 
@@ -16,13 +15,12 @@ const Frontend = (props: { categories: string[] }) => {
     <section
       className={`d-flex justify-content-between align-items-center flex-column flex-lg-row`}
       id='frontend-related'>
-      <div className={styles.leftSide}>
-        <Image
+      <div className={`${styles.leftSide} col-12 col-lg-7`}>
+        <img
           src='imgs/Frontend-background.svg'
           alt='frontend-background'
-          width={820}
-          height={740}
-          loading='eager'
+          width='100%'
+          className='img-fluid'
         />
 
         <div className={styles.content}>
@@ -33,12 +31,11 @@ const Frontend = (props: { categories: string[] }) => {
               <Link href={`/frontend-related/${item}`} key={idx}>
                 <div className={styles.details}>
                   <h3 className={styles.certificate}>{item}</h3>
-                  <Image
+                  <img
                     src='imgs/bot-arm.svg'
                     alt='bot-arm'
-                    width={338}
-                    height={58}
-                    loading='lazy'
+                    width='100%'
+                    className='img-fluid'
                   />
                 </div>
               </Link>
@@ -47,13 +44,14 @@ const Frontend = (props: { categories: string[] }) => {
         </div>
       </div>
 
-      <Image
-        src='imgs/frontend-skillset.svg'
-        alt='frontend-skillset'
-        className={styles.skillset}
-        width={584}
-        height={567}
-      />
+      <div className='col-12 col-lg-5'>
+        <img
+          src='imgs/frontend-skillset.svg'
+          alt='frontend-skillset'
+          className={`img-fluid me-0 ${styles.skillset}`}
+          width='100%'
+        />
+      </div>
     </section>
   );
 };

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./intro.module.css";
 
 const Intro = (props: { post: { name: string; body: [] } }) => {
@@ -13,25 +12,25 @@ const Intro = (props: { post: { name: string; body: [] } }) => {
   // console.log(finalTexts);
 
   return (
-    <section className={`${styles.introContainer} mx-5`}>
+    <section className={`${styles.introContainer} container`}>
       <div className={styles.imageHolder}>
-        <Image
-          className={styles.chatbox}
-          src="imgs/chat-box.svg"
-          alt="intro-container"
-          fill
+        <img
+          className='img-fluid'
+          width='100%'
+          src='imgs/chat-box.svg'
+          alt='intro-container'
         />
-        <div className={`${styles.introText} intro-content`}>
-            <h1>Hi, I am {name}!</h1>
-            <br />
+        <div className={`${styles.introText} intro-content container px-5`}>
+          <h1>Hi, I am {name}!</h1>
+          <br />
+          {finalTexts.map((text: string, idx: number) => {
+            if (idx <= 1) return <p key={idx}>{text}</p>;
+          })}
+          <ul>
             {finalTexts.map((text: string, idx: number) => {
-              if (idx <= 1) return <p key={idx}>{text}</p>;
+              if (idx > 1) return <li key={idx}>{text}</li>;
             })}
-            <ul>
-              {finalTexts.map((text: string, idx: number) => {
-                if (idx > 1) return <li key={idx}>{text}</li>;
-              })}
-            </ul>
+          </ul>
         </div>
       </div>
     </section>

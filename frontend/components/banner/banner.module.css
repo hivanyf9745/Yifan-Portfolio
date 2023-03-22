@@ -1,14 +1,14 @@
 .bannerContainer {
   position: relative;
 
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
 .banner {
   position: relative;
-  width: 100vw;
-  height: 84.8rem;
+  width: 100%;
+  height: auto;
 }
 
 .gear {
@@ -19,6 +19,13 @@
   left: 50%;
 
   transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1000px) {
+  .gear {
+    height: 3rem;
+    width: 3rem;
+  }
 }
 
 .heroContainer {

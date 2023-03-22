@@ -7,7 +7,7 @@ const DataAnalysis = (props: { categories: string[] }) => {
     <section
       className={`${styles.container} d-flex justify-content-center justify-content-lg-between align-items-center`}
       id='data-analysis'>
-      <div className="d-none d-lg-block">
+      <div className='d-none d-lg-block'>
         <Image
           className={styles.prototypeLeft}
           src='imgs/prototype-border-left.svg'
@@ -27,24 +27,28 @@ const DataAnalysis = (props: { categories: string[] }) => {
           href='/data-analysis/information-retrieval-system-using-pyterrier-react-js-and-node'
           className={styles.detailLeft}>
           <h2>Information Retrieval</h2>
-          <Image src='imgs/loading.svg' alt='loading' width={467} height={83} />
+          <img
+            src='imgs/loading.svg'
+            alt='loading'
+            width='80%'
+            className='img-fluid'
+          />
         </Link>
 
         <Link
           href='/data-analysis/miami-university-crowd-index-using-d3-to-display-real-time-library-crowdedness'
           className={styles.detailRight}>
-          <Image
+          <img
             src='imgs/IoT.svg'
             alt='Internet of Things'
-            width={343}
-            height={91}
-            className={styles.IoT}
+            width='70%'
+            className='float-end'
           />
           <h2>Miami Univ. Crowd Index</h2>
         </Link>
       </div>
 
-      <div className="d-none d-lg-block">
+      <div className='d-none d-lg-block'>
         <Image
           className={styles.prototypeRight}
           src='imgs/prototype-border-right.svg'

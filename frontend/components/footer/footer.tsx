@@ -8,26 +8,19 @@ const Footer = () => {
       <hr className={styles.hrTop} />
       <div
         className={`d-flex justify-content-around align-items-center ${styles.footerContainer}`}>
-        <div
-          className={`d-flex justify-content-between align-items-center ${styles.logoContainer}`}>
-          <Image
+        <div>
+          <img
             src='../../imgs/footer-logo.svg'
             alt='footer-logo'
-            width={102}
-            height={85}
+            width='50%'
+            style={{ opacity: "50%" }}
           />
-          <div className={styles.footerCredit}>
-            <Image
-              src='../../imgs/bot-arm.svg'
-              alt='bot-arm'
-              width={380}
-              height={65}
-            />
-            <div className={styles.creditText}>Developed by: Ivan & Meng</div>
-          </div>
+        </div>
+        <div>
+          <div className={styles.creditText}>Developed by: Ivan & Meng</div>
         </div>
         <ul
-          className={`d-flex flex-lg-row flex-column justify-content-around align-items-start ${styles.toolkit}`}>
+          className={`d-flex flex-lg-row flex-column justify-content-around align-items-start align-items-lg-center mb-0 ${styles.toolkit}`}>
           <li>
             <Link href='https://nextjs.org/' target={"_blank"}>
               Next.js

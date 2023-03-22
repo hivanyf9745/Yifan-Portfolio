@@ -47,6 +47,16 @@ export default function App({ Component, pageProps }: AppProps) {
       <Layout>
         <style jsx global>
           {`
+            html {
+              font-size: 62.5%;
+            }
+
+            @media only screen and (max-width: 414px) {
+              html {
+                font-size: 35%;
+              }
+            }
+
             :root {
               --oxanium-font: ${oxanium.style.fontFamily};
               --okuda-font: ${okuda.style.fontFamily};

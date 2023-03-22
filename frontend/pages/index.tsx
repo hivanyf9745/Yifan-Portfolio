@@ -1,11 +1,8 @@
-import styles from "../styles/Home.module.css";
-
 import Banner from "@/components/banner/banner";
 import Intro from "@/components/intro/intro";
 import LibraryRelated from "@/components/library/library";
 import Frontend from "@/components/Front-end/frontend";
 import DataAnalysis from "@/components/data-analysis/dataAnalysis";
-import Footer from "@/components/footer/footer";
 
 import { client } from "../client";
 import groq from "groq";

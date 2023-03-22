@@ -12,15 +12,9 @@
   height: 8.5rem;
 }
 
-.footerCredit {
-  position: relative;
-}
-
 .creditText {
-  position: absolute;
   font-size: 1.8rem;
-  top: -1.2rem;
-  left: 15rem;
+  opacity: 50%;
 }
 
 .toolkit {
