@@ -36,7 +36,7 @@ const DataAnalysis = (props: { categories: string[] }) => {
           <img
             src='imgs/IoT.svg'
             alt='Internet of Things'
-            width='80%'
+            width='70%'
             className='float-end'
           />
           <h2 className='float-end'>Miami Univ. Crowd Index</h2>
