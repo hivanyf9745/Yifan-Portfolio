@@ -2,7 +2,7 @@ import styles from "./banner.module.css";
 
 const Banner = () => {
   return (
-    <section className={`${styles.bannerContainer} container-fluid`}>
+    <section className={`${styles.bannerContainer} `}>
       <img
         src='imgs/background-banner.svg'
         alt='background-banner'
