@@ -18,8 +18,6 @@
   z-index: 1000;
   color: #fff;
   text-decoration: none;
-
-  width: 50rem;
 }
 
 .detailLeft:hover {
@@ -39,8 +37,6 @@
   z-index: 1000;
   color: #fff;
   text-decoration: none;
-
-  width: 50rem;
 }
 
 .detailRight:hover {
