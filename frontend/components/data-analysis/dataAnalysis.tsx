@@ -39,7 +39,7 @@ const DataAnalysis = (props: { categories: string[] }) => {
             width='80%'
             className='float-end'
           />
-          <h2>Miami Univ. Crowd Index</h2>
+          <h2 className='float-end'>Miami Univ. Crowd Index</h2>
         </Link>
       </div>
 
