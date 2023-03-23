@@ -5,16 +5,16 @@
 .content {
   position: absolute;
 
-  top: 17rem;
-  left: 26.5rem;
+  top: 20%;
+  left: 30%;
 }
 
 @media only screen and (max-width: 414px) {
   .content {
     position: absolute;
 
-    top: 9rem;
-    left: 15rem;
+    top: 20%;
+    left: 30%;
   }
 }
 
